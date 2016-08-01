@@ -1,4 +1,4 @@
-#include "TimeStampReader.h"
+#include "../include/TimeStampReader.h"
 #include <string>
 #include <algorithm>
 int TimeStampReader::GetValueOfTimeStamp(std::string aTimeStamp)

@@ -1,5 +1,5 @@
-#include "BillGenerator.h"
-#include "TimeStampReader.h"
+#include "../include/BillGenerator.h"
+#include "../include/TimeStampReader.h"
 
 #include <algorithm>
 #include <fstream>

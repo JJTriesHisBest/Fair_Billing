@@ -1,4 +1,4 @@
-#include "src/BillGenerator.h"
+#include "include/BillGenerator.h"
 #include <memory>
 
 int main(int argc, const char* argv[])

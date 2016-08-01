@@ -1,4 +1,4 @@
-#include "UserBill.h"
+#include "../include/UserBill.h"
 
 UserBill::UserBill(std::string aName, unsigned int aTimeAtStartOfBill)
     : iName(aName)
