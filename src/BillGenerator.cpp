@@ -7,6 +7,8 @@
 #include <cctype>
 #include <iostream>
 #include <memory>
+
+static const unsigned int kPosAfterTimeStamp = 9;
 BillGenerator::BillGenerator(const char* aPathToLog)
     : iMostRecentTime(0)
     , iFirstValidEntryRead(false)
@@ -33,8 +35,8 @@ BillGenerator::BillGenerator(const char* aPathToLog)
         }
 
         /**Evaluate Name*/
-        auto end_of_name = entry.find_first_of(' ', 9);
-        auto name = entry.substr(9, end_of_name - 9);
+        auto end_of_name = entry.find_first_of(' ', kPosAfterTimeStamp);
+        auto name = entry.substr(kPosAfterTimeStamp, end_of_name - kPosAfterTimeStamp);
         bool isAlphaNumerical = true;
         for(char& c : name) {
             auto alnum = std::isalnum(c);
