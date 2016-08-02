@@ -5,20 +5,20 @@ Specification
 =============
 
 When presented with a log file like this example
------------------------
-14:02:03 ALICE99 Start
-14:02:05 CHARLIE End
-14:02:34 ALICE99 End
-14:02:58 ALICE99 Start
-14:03:02 CHARLIE Start
-14:03:33 ALICE99 Start
-14:03:35 ALICE99 End
-14:03:37 CHARLIE End
-14:04:05 ALICE99 End
-14:04:23 ALICE99 End
-14:04:41 CHARLIE Start
-14:04:42 JJ End
-------------------------
+
+    14:02:03 ALICE99 Start
+    14:02:05 CHARLIE End
+    14:02:34 ALICE99 End
+    14:02:58 ALICE99 Start
+    14:03:02 CHARLIE Start
+    14:03:33 ALICE99 Start
+    14:03:35 ALICE99 End
+    14:03:37 CHARLIE End
+    14:04:05 ALICE99 End
+    14:04:23 ALICE99 End
+    14:04:41 CHARLIE Start
+    14:04:42 JJ End
+
 
 Where the proper format for an entry is a timestamp formatted as HH:MM:SS,
 the name is alphanumerical and of an arbitrary length, and the final field is always
@@ -36,8 +36,6 @@ The output of the program should have one row for each user, where the first col
 
 For example, the above text would output
 
-------------------
-ALICE99 4 240
-CHARLIE 3 38
-JJ 1 159
-------------------
+    ALICE99 4 240
+    CHARLIE 3 38
+    JJ 1 159
