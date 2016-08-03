@@ -1,6 +1,7 @@
 #include "../include/TimeStampReader.h"
 #include <string>
 #include <algorithm>
+#include <stdexcept>
 int TimeStampReader::GetValueOfTimeStamp(std::string aTimeStamp)
 {
     if(aTimeStamp.length() != 8) {
