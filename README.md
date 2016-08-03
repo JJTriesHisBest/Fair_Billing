@@ -4,9 +4,11 @@ Technical challenge: Given a log file with a known format, parse information abo
 Example of usage:
 -----------------
 Build the program on Ubuntu like so:
+
 	gcc LogAnalyserMain.cpp src/* -std=c++14 -lstdc++ -o fairBilling
 
 Run that program:
+	
 	./fairBilling input2.txt
 
 Specification
