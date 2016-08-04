@@ -78,7 +78,7 @@ BillGenerator::BillGenerator(const char* aPathToLog)
 
 void BillGenerator::ProcessValidEntry(unsigned int aTime, std::string aName, bool aIsBegin)
 {
-    auto userToBill = std::find_if(iUsersToBill.begin(), iUsersToBill.end(), [&](auto&& user){
+    auto userToBill = std::find_if(iUsersToBill.begin(), iUsersToBill.end(), [&](std::unique_ptr<UserBill>& user){
         return user->Name() == aName;
     });
 
