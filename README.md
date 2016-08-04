@@ -7,6 +7,10 @@ Build the program on Ubuntu like so:
 
 	gcc LogAnalyserMain.cpp src/* -std=c++14 -lstdc++ -o fairBilling
 
+or for versions of gcc prior to adding the c++14 tag use
+
+	gcc LogAnalyserMain.cpp src/* -std=c++1y -lstdc++ -o fairBilling
+
 Run that program:
 	
 	./fairBilling input2.txt
